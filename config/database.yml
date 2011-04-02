@@ -1,0 +1,29 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: social_todo_development
+  pool: 5
+  username: root
+  password: mangup
+  socket: /var/run/mysqld/mysqld.sock
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: social_todo_test
+  pool: 5
+  username: root
+  password: mangup
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: social_todo_production
+  pool: 5
+  username: root
+  password:
+  socket: /var/run/mysqld/mysqld.sock
