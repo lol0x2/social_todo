@@ -5,6 +5,7 @@ gem 'rails', '3.0.5'
 gem 'mysql2'
 gem 'haml'
 gem 'omniauth'
+gem 'jquery-rails'
 
 group :development do
   gem 'rspec-rails'

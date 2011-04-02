@@ -3,7 +3,32 @@
   %head
     %title SocialTodo
     = stylesheet_link_tag :all
+    = stylesheet_link_tag 'blueprint/screen', :media => 'screen'
+    = stylesheet_link_tag 'osx', :media => 'screen'
+    = stylesheet_link_tag 'custom', :media => 'screen'
+    = stylesheet_link_tag 'blueprint/print',  :media => 'print'
     = javascript_include_tag :defaults
+    = javascript_include_tag 'jquery.simplemodal'
+    = javascript_include_tag 'osx'
     = csrf_meta_tag
-  %body
+ 
+.container
+
+  = render 'header'
+
+  %section.round
+    #user_nav
+      - if current_user
+        Welcome, #{current_user.name}!
+        img, #{current_user.avatar}
+        = link_to "Sign Out", signout_path 
+      - else
+        Please sign in!
+        /тут нужно osx блок показать
+        = render 'auth'
+    
+
     = yield
+
+  = render 'footer'
+

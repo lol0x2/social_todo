@@ -1,0 +1,11 @@
+#osx-modal-content
+  #osx-modal-title Авторизация
+  .close
+  #osx-modal-data
+    .auth{"align" => "center"}
+      %h3 Войдите, используя любой аккаунт
+      = link_to image_tag("facebook_64.png", :alt => "Facebook", :class => "round"), "/auth/facebook"
+      = link_to image_tag("twitter_64.png", :alt => "Twitter", :class => "round"), "/auth/twitter"
+      = link_to image_tag("google_64.png", :alt => "Google", :class => "round"), "/auth/google"
+      = link_to image_tag("linkedin_64.png", :alt => "Linkedin", :class => "round"), "/auth/linkedin"
+      = link_to image_tag("vkontakte_64.png", :alt => "Vkontakte", :class => "round"), "/auth/vkontakte"
