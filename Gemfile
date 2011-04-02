@@ -7,6 +7,7 @@ gem 'haml'
 gem 'omniauth'
 gem 'jquery-rails'
 
+#...
 group :development do
   gem 'rspec-rails'
 end
